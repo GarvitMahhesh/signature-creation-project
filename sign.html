@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Pad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body{
+        background-color: #416eea;
+
+    }
+   
+</style>
+<body>
+    <div class="controls">
+        <label for="colorSelect" style="border: black;border-radius: 10px;" > Pen Color:</label>
+            
+
+        <select id="colorSelect" class="cuslect">
+            <option value="#000000" style="background-color: #000000; color: #f5ebeb; ">Black</option>
+            <option value="#FF0000" style="background-color: #FF0000; color: #FFFFFF;">Red</option>
+            <option value="#00FF00" style="background-color: #00FF00; color: #ffffff;">Green</option>
+            <option value="#0000FF" style="background-color: #0000FF; color: #FFFFFF;">Blue</option>
+            <option value="#FFFF00" style="background-color: #FFFF00; color: #fffafa;">Yellow</option>
+            <option value="#FFA500" style="background-color: #FFA500; color: #fafafa;">Orange</option>
+            <option value="#800080" style="background-color: #800080; color: #FFFFFF;">Purple</option>
+        </select>
+        <label for="thickness">Pen Thickness (px):</label>
+        <select id="thickness">
+            <option value="1">1px</option>
+            <option value="2">2px</option>
+            <option value="3">3px</option>
+            <option value="4">4px</option>
+            <option value="5">5px</option>
+            <option value="6">6px</option>
+            <option value="7">7px</option>
+            <option value="8">8px</option>
+            <option value="9">9px</option>
+            <option value="10">10px</option>
+            <option value="11">11px</option>
+            <option value="12">12px</option>
+        </select>
+        <button id="eraseBtn" class="earse">Erase</button>
+    
+    </div>
+<p style="text-decoration: underline;" > Sign inside the box</p>
+    <div id="signatureContainer">
+        <canvas id="signatureCanvas"></canvas>
+    </div>
+    <button class="download" id="downloadBtn">Download Signature</button>
+    <script src="app.js"></script>
+</body>
+</html>
